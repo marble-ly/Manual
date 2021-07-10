@@ -1,0 +1,55 @@
+$ mkdir [dir_name] 	폴더 생성
+$ cd			폴더 이동
+$ cd .			현재 디렉토리
+$ cd ..			부모 디렉토리
+$ ls			파일보기
+$ al			파일의 세부내용 확인
+
+$ rm [file_name]		파일 삭제
+$ rm -r [dir_name]		폴더 삭제
+
+$ code .			현재 폴더를 VS Code 에디터로 열기
+
+$ touch [file_name]		빈 파일 생성
+
+-------------------------------------------------------------------------
+
+$ git log					현재 위치한 브랜치 커밋 내용 확인 및 식별자 부여됨
+
+$ git init	.git 				하위 디렉토리 생성
+$ git clone <https:.. URL>			기존 소스 코드 다운로드/복제
+
+$ git fetch 					git서버에서 최신 코드 받아오기
+$ git reset — hard HEAD^ 			commit한 이전 코드 취소하기
+$ git reset — soft HEAD^ 			코드는 살리고 commit만 취소하기
+
+$ git config — global user.name “user_name ”  	git 계정Name 변경하기
+$ git config — global user.email “user_email” 	git 계정Mail변경하기
+$ git remote add origin <원격 서버 주소>  	git 원격 서버 주소 입력
+
+$ git add <파일명>
+$ git add *				커밋에 단일 파일의 변경 사항을 포함
+$ git add -A				커밋에 파일의 변경 사항을 한번에 모두 포함
+
+$ git commit -m "커밋 메시지"		커밋 생성(실제 변경사항 확정)
+$ git status				파일 상태 확인
+
+$ git branch				브랜치 목록
+$ git branch <브랜치이름>			새 브랜치 생성 (local로 만듦)
+
+$ git checkout -b <브랜치이름>		브랜치 생성 & 이동
+$ git checkout master			master branch로 되돌아 옴
+$ git branch -d <브랜치이름>		브랜치 삭제
+$ git push origin <브랜치이름>		만든 브랜치를 원격 서버에 전송
+$ git push -u < remote > <브랜치이름>	새 브랜치를 원격 저장소로 push
+$ git push -u origin master			origin master 파일을 원격 저장소로 push
+$ git pull < remote > <브랜치이름>		원격에 저장된 git 프로젝트의 현재 상태를 다운받고 + 현재 위치한 브랜치로 병합
+$ git push origin master			변경사항 원격 서버에 업로드
+$ git push < remote > <브랜치이름>		커밋을 원격 서버에 업로드
+$ git push -u < remote > <브랜치이름>	커밋을 원격 서버에 업로드
+
+$ git merge <다른 브랜치이름>		현재 브랜치에 다른 브랜치의 수정사항 병합
+$ git add <파일명>			각 파일을 병합할 수 있음
+$ git diff <브랜치이름><다른 브랜치이름>	변경 내용 merge 전에 바뀐 내용을 비교할 수 있음
+
+$ git checkout -- <파일명>			로컬의 변경 사항을 변경 전으로 되돌림
