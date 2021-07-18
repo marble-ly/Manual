@@ -63,3 +63,8 @@ $ git reset --hard        파일까지 모두 삭제
 $ git revert
 $ git revert HEAD^^       HEAD 파일로 부터 2칸 뒤쪽의 커밋을 리버트(새로운 커밋으로 만듦)
 $ git revert HEAD~6       6칸
+
+-------------------------------------------------------------------------
+
+$ git push -f origin master       커밋 깃허브에 업로드
+$ git reset HEAD^                 커밋 1개 삭제
