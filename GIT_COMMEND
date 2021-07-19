@@ -68,3 +68,5 @@ $ git revert HEAD~6       6칸
 
 $ git push -f origin master       커밋 깃허브에 업로드
 $ git reset HEAD^                 커밋 1개 삭제
+
+netlify                   내가만든 사이트 업로드해서 공유하고 호스팅 서버 해주는 사이트(1달에 무료로 100gb 트래픽 사용가능)
